@@ -5,6 +5,7 @@ import App from "../App";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import NotFound from "../pages/NotFound";
+import PropsEx from "../pages/PropsEx";
 
 //브라우저 라우터를 생성합니다.
 //배열 안에 모든 페이지(URL)를 등록합니다.
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "about", // "/about"으로 접속하면 
         element: <About /> //Outlet위치에 About 컴포넌트를 출력합니다
+      },
+      {
+        path: "props", 
+        element: <PropsEx /> 
       },
     ]
   },
