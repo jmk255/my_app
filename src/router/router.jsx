@@ -8,6 +8,8 @@ import NotFound from "../pages/NotFound";
 import PropsEx from "../pages/PropsEx";
 import ChildrenEx from "../pages/ChildrenEx";
 import ExampleForm from "../pages/ExampleForm";
+import EventEx from "../pages/EventEx";
+import StateHook from "../pages/StateHook";
 
 //브라우저 라우터를 생성합니다.
 //배열 안에 모든 페이지(URL)를 등록합니다.
@@ -35,6 +37,14 @@ const router = createBrowserRouter([
       {
         path: "example", 
         element: <ExampleForm /> 
+      },
+      {
+        path: "event", 
+        element: <EventEx /> 
+      },
+      {
+        path: "state", 
+        element: <StateHook /> 
       },
     ]
   },

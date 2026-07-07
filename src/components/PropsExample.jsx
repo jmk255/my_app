@@ -5,7 +5,7 @@
 export const GreetingWithDefault = ({ name = "Guest" }) => {
   return (
     <>
-      <p>Hello, {name}!</p>;
+      <p>Hello, {name}!</p>
       <hr />
     </>
   )
@@ -17,11 +17,12 @@ export const GreetingWithDefault = ({ name = "Guest" }) => {
 //ChildComponent라는 컴포넌트를 생성하세요.
 //ParentComponent는 ChildComponent를 자식 컴포넌트로 가지고 있으며, ChildComponent에게 message라는 속성을 전달합니다.
 //ChildComponent는 message를 화면에 표시합니다.
+import ChildComponent from "./ChildComponent";
 
 export const ParentComponent = () => {
   return (
     <>
-
+      <ChildComponent message="Hello from parent" />
       <hr />
     </>
   )
@@ -36,13 +37,14 @@ export const ParentComponent = () => {
 //isActive는 부모컴포넌트(App)에서 props로 전달 받습니다.
 //이 컴포넌트는 "Status: [Active/Inactive]"라는 텍스트를 포함하는 <div> 요소를 반환합니다.
 
+//조건식 ? "active" : "inactive"
 import ConditionalComponent from "./ConditionalComponent";
 
 export const ToggleComponent = () => {
   return (
     <>
       <h1>Toggle Component</h1>
-      <ConditionalComponent isActive={true} />
+      <ConditionalComponent isActive={false} />
       <hr />
     </>
   )

@@ -11,6 +11,8 @@ function Header(){
       <Link to="/about">About</Link>{" | "}
       <Link to="/props">Props</Link>{" | "}
       <Link to="/children">Children</Link>{" | "}
+      <Link to="/event">Event</Link>{" | "}
+      <Link to="/state">state</Link>{" | "}
     </nav>
   )
 }
