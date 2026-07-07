@@ -1,4 +1,3 @@
-import React from 'react'
 //부모 컴포넌트에서 전달받은 props 객체를 매개변수로 받음
 function Message(props) {
   //prop.color값을 이용하여 글자 색상을 지정하는 스타일 객체 생성

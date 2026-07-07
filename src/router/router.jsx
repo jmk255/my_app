@@ -6,6 +6,8 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import NotFound from "../pages/NotFound";
 import PropsEx from "../pages/PropsEx";
+import ChildrenEx from "../pages/ChildrenEx";
+import ExampleForm from "../pages/ExampleForm";
 
 //브라우저 라우터를 생성합니다.
 //배열 안에 모든 페이지(URL)를 등록합니다.
@@ -25,6 +27,14 @@ const router = createBrowserRouter([
       {
         path: "props", 
         element: <PropsEx /> 
+      },
+      {
+        path: "children", 
+        element: <ChildrenEx /> 
+      },
+      {
+        path: "example", 
+        element: <ExampleForm /> 
       },
     ]
   },
